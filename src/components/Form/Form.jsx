@@ -1,4 +1,4 @@
-import Input from "../Input/Input";
+
 
 const Form = ({ onSubmit }) => {
   const safeSubmit = (event) => {
@@ -11,9 +11,9 @@ const Form = ({ onSubmit }) => {
 
   return (
     <form onSubmit={safeSubmit} className='h-full flex flex-col items-center justify-center -mt-20 gap-10 mx-5'>
-      <Input type='text' required placeholder="Insira seu usuário" />
-      <Input type='email' required placeholder="Insira seu email" />
-      <button type="submit" className="px-6 py-2 w-full max-w-sm bg-newsletter-100 dark:bg-dark-200 rounded-full text-gray-100 dark: text-gray-20 uppercase outline-none">Seguir</button>
+      <input type='text' className="newsletter-input" required placeholder="Insira seu usuário" />
+      <input type='email' className="newsletter-input" required placeholder="Insira seu email" />
+      <button type="submit" className="newsletter-button">Seguir</button>
     </form>
   );
 };

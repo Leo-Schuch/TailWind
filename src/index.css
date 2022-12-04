@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h1{
+       @apply text-gray-100 sm:hover:text-2xl sm:cursor-pointer text-xl;
+    }
+}
+
+@layer components{
+    .newsletter-input {
+        @apply py-1 pl-5 w-full max-w-lg dark:bg-dark-200 text-dark-200  dark:text-gray-200 rounded-full outline-none placeholder:text-gray-400 placeholder:dark:text-gray-600 placeholder:text-xs placeholder:uppercase placeholder:font-bold focus:border-2 focus:border-newsletter-200 focus:dark:border-newsletter-100 invalid:focus:border-2 invalid:focus:border-red-400 invalid:focus:dark:border-2 invalid:focus:dark:border-red-400;
+    }
+
+    .newsletter-button{
+        @apply px-6 py-2 w-full max-w-sm bg-newsletter-100 dark:bg-dark-200 rounded-full text-gray-100 dark:text-gray-200 outline-none hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-black uppercase;
+    }
+
+    .newsletter-card{
+        @apply p-5 bg-gray-200 dark:bg-dark-200 sm:rounded-xl sm:shadow-lg flex gap-2 flex-col items-center sm:hover:shadow-gray-500 sm:hover:dark:shadow-red-100 sm:hover:shadow-md
+    }
+}
+

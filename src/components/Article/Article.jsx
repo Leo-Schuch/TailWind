@@ -1,6 +1,6 @@
 const Article = ({ title, text, tags, image, alt }) => {
   return (
-    <div className="p-5 bg-gray-200 dark:bg-dark-200 sm:rounded-xl sm:shadow-lg flex gap-2 flex-col  items-center">
+    <div className="newsletter-card">
       <h3 className="text-xl text-newsletter-200 dark:text-gray-200 font-bold">
         {title}
       </h3>
@@ -8,7 +8,7 @@ const Article = ({ title, text, tags, image, alt }) => {
         {tags.map((tag) => (
           <span
             key={tag}
-            className="bg-newsletter-100 dark:bg-dark-100 px-4 py-1 rounded-full text-gray-200 text-xs font-bold  uppercase"
+            className="bg-newsletter-100 dark:bg-dark-100 px-4 py-1 rounded-full text-gray-200 text-xs font-bold uppercase hover:bg-newsletter-200 hover:scale-110"
           >
             {tag}
           </span>
